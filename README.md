@@ -1,20 +1,12 @@
 # SVG to JSX 🌓
 > Tiny module for transforming SVG to valid JSX
 
+[![npm version](https://badge.fury.io/js/%40balajmarius%2Fsvg-to-jsx.svg)](https://badge.fury.io/js/%40balajmarius%2Fsvg-to-jsx)
+
 ### Install ⚙
 
 ```
-yarn add svg-to-jsx --dev
-```
-
-### What it can do ✅
-
-`svg-to-jsx` uses `svg-go` and accepts all the config that are available in [`svg-go`](https://github.com/svg/svgo#what-it-can-do) like this
-
-```
-const transform = require('svg-to-jsx')
-
-tansform(someSVG, { cleanupIDs: false, convertPathData: true, ... })
+yarn add @balajmarius/svg-to-jsx --dev
 ```
 
 ### Use 🛠
@@ -22,7 +14,7 @@ tansform(someSVG, { cleanupIDs: false, convertPathData: true, ... })
 ```
 const fs = require('fs')
 const path = require('path')
-const transform = require('svg-to-jsx')
+const transform = require('@balajmarius/svg-to-jsx')
 
 const filepath = path.resolve(__dirname, 'test.svg')
 
@@ -36,9 +28,16 @@ fs.readFile(filepath, 'utf8', (error, data) => {
     .catch(error => console.log(error))
 
 })
+```
 
+### What it can do ✅
+
+`svg-to-jsx` uses `svgo` and accepts all the config that are available in [`svgo`](https://github.com/svg/svgo#what-it-can-do)
+
+```
+tansform(someSVG, { cleanupIDs: false, convertPathData: true, ... })
 ```
 
 ### TODO 📝
 
--[] GUI
+- [ ] GUI
