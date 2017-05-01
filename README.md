@@ -23,20 +23,19 @@ fs.readFile(filepath, 'utf8', (error, data) => {
   if (error) throw new Error('😞 Something went wrong')
 
   // transform but keep ids
-  return transform(data, { cleanupIDs: false })
+  return transform(data)
     .then(transformedSVG => console.log(transformedSVG))
     .catch(error => console.log(error))
 
 })
 ```
 
-### What it can do ✅
+### What it does ✅
 
-`svg-to-jsx` uses `svgo` and accepts all the config that are available in [`svgo`](https://github.com/svg/svgo#what-it-can-do)
-
-```
-tansform(someSVG, { cleanupIDs: false, convertPathData: true, ... })
-```
+- Convert attributes to valid JSX attributes
+- Convert CSS to Javascript
+- Convert CSS (fill, display, ..) to attributes
+- Remove useless attributes
 
 ### TODO 📝
 
