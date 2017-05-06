@@ -1,9 +1,11 @@
 {
   "name": "@balajmarius/svg-to-jsx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Transform SVG elements to JSX",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/balajmarius/svg-to-jsx.git"
@@ -24,5 +26,8 @@
     "cheerio": "^0.22.0",
     "css-to-react-native": "^2.0.3",
     "svgo": "^0.7.2"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
   }
 }

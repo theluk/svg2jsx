@@ -9,9 +9,15 @@
 yarn add @balajmarius/svg-to-jsx --dev
 ```
 
-### Use 🛠
+### Test ⛱
 
 ```
+yarn test
+```
+
+### Use 🛠
+
+```javascript
 const fs = require('fs')
 const path = require('path')
 const transform = require('@balajmarius/svg-to-jsx')
@@ -22,7 +28,6 @@ fs.readFile(filepath, 'utf8', (error, data) => {
 
   if (error) throw new Error('😞 Something went wrong')
 
-  // transform but keep ids
   return transform(data)
     .then(transformedSVG => console.log(transformedSVG))
     .catch(error => console.log(error))
@@ -40,3 +45,5 @@ fs.readFile(filepath, 'utf8', (error, data) => {
 ### TODO 📝
 
 - [ ] Single/double quotes option
+- [ ] Format option 
+- [ ] React-native
