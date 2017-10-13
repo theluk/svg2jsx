@@ -30,8 +30,7 @@ const JSX_ATTRIBUTES = {
   class: 'className',
   viewbox: 'viewBox',
   linearGradient: 'linearGradient',
-  linearGradient: 'linearGradient',
-  gradienttransform: 'gradientTransform'
+  gradientTransform: 'gradientTransform'
 }
 
 const REGEX = {

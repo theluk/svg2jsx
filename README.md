@@ -41,9 +41,3 @@ fs.readFile(filepath, 'utf8', (error, data) => {
 - Convert CSS to Javascript
 - Convert CSS (fill, display, ..) to attributes
 - Remove useless attributes
-
-### TODO 📝
-
-- [ ] Single/double quotes option
-- [ ] Format option 
-- [ ] React-native
