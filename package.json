@@ -1,6 +1,6 @@
 {
   "name": "@balajmarius/svg-to-jsx",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Transform SVG elements to JSX",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,9 @@
   "homepage": "https://github.com/balajmarius/svg-to-jsx#readme",
   "dependencies": {
     "camel-case": "^3.0.0",
-    "cheerio": "^0.22.0",
-    "css-to-react-native": "^2.0.3",
+    "css-to-react-native": "^2.1.2",
+    "html-parse-stringify": "^1.0.2",
+    "lodash.flow": "^3.5.0",
     "svgo": "^0.7.2"
   },
   "devDependencies": {
