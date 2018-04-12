@@ -34,10 +34,3 @@ fs.readFile(filepath, 'utf8', (error, data) => {
 
 })
 ```
-
-### What it does ✅
-
-- Convert attributes to valid JSX attributes
-- Convert CSS to Javascript
-- Convert CSS (fill, display, ..) to attributes
-- Remove useless attributes
