@@ -4,6 +4,7 @@
   "description": "Transform SVG elements to JSX",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --config .eslintrc lib/ --fix",
     "test": "node test"
   },
   "repository": {
@@ -30,6 +31,10 @@
     "svgo": "^0.7.2"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-marius": "^1.0.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0",
     "tape": "^4.6.3"
   }
 }
