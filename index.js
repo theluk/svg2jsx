@@ -8,9 +8,9 @@ const { transform } = require('./lib/transformer')
  */
 const svg2jsx = svg => {
 
-	return optimize(svg)
-		.then(parse)
-		.then(transform)
+  return optimize(svg)
+	  .then(parse)
+    .then(transform)
 
 }
 	
