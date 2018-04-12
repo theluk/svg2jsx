@@ -1,1 +1,1 @@
-require('./svgToJsx.spec')
+const test = require('tape')
