@@ -24,8 +24,8 @@
   "dependencies": {
     "camel-case": "^3.0.0",
     "css-to-react-native": "^2.1.2",
-    "html-parse-stringify": "^1.0.2",
     "lodash.flow": "^3.5.0",
+    "svg-parser": "^1.0.5",
     "svgo": "^0.7.2"
   },
   "devDependencies": {
