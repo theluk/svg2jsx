@@ -6,7 +6,7 @@
 ### Install ⚙
 
 ```
-yarn add @balajmarius/svg-to-jsx --dev
+yarn add @balajmarius/svg2jsx --dev
 ```
 
 ### Test ⛱
@@ -20,7 +20,7 @@ yarn test
 ```javascript
 const fs = require('fs')
 const path = require('path')
-const transform = require('@balajmarius/svg-to-jsx')
+const svg2jsx = require('@balajmarius/svg2jsx')
 
 const filepath = path.resolve(__dirname, 'test.svg')
 
@@ -28,7 +28,7 @@ fs.readFile(filepath, 'utf8', (error, data) => {
 
   if (error) throw new Error('😞 Something went wrong')
 
-  return transform(data)
+  return svg2jsx(data)
     .then(transformedSVG => console.log(transformedSVG))
     .catch(error => console.log(error))
 
