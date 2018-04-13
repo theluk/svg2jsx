@@ -1,5 +1,5 @@
 {
-  "name": "@balajmarius/svg-to-jsx",
+  "name": "@balajmarius/svg2jsx",
   "version": "2.0.0",
   "description": "Transform SVG elements to JSX",
   "main": "index.js",
@@ -19,9 +19,9 @@
   "author": "Balaj Marius <balajmarius93@gmail.com> (http://balajmarius.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/balajmarius/svg-to-jsx/issues"
+    "url": "https://github.com/balajmarius/svg2jsx/issues"
   },
-  "homepage": "https://github.com/balajmarius/svg-to-jsx#readme",
+  "homepage": "https://github.com/balajmarius/svg2jsx#readme",
   "dependencies": {
     "camel-case": "^3.0.0",
     "css-to-react-native": "^2.1.2",
