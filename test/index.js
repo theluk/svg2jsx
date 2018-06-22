@@ -70,3 +70,11 @@ test('svg2jsx - convert inline style to JS objects', t => {
     })
 
 })
+
+test('svg2jsx - does not throw when children is undefined when node is a string', t => {
+
+  return svg2jsx('<svg><text>Foo</text></svg>')
+    .catch((e) => t.fail(e))
+    .then(() => t.end())
+
+})
